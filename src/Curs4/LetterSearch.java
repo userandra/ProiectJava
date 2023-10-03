@@ -11,6 +11,7 @@ public class LetterSearch {
 		Scanner scan  =  new Scanner(System.in);
 		System.out.println("Please enter a text:");
 		text = scan.next().toUpperCase();
+		//text = scan.next();
 		scan.close();		
 	}
 	
@@ -19,6 +20,7 @@ public class LetterSearch {
 		int counter = 0;
 		
 		for(int i=0; i<text.length(); i++) {
+			//if(text.charAt(i)=='A' || text.charAt(i)=='a') {
 			if(text.charAt(i)=='A') {
 				counter++;
 			}	
