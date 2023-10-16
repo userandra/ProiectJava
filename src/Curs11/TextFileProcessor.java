@@ -24,7 +24,13 @@ public void writeFile(String text) {
 		try{
 			File fileObj = new File("test.txt");
 			Scanner scan = new Scanner(fileObj);
+			
+			//hasNext()este o metoda de tip boolean
 			while(scan.hasNext()) {
+				/*vf dc dupa linia curenta mai exista o alta linie si return true
+				Return Value:
+			        True  - if iteration has more elements 
+			        False - if iteration has no more elements*/
 				System.out.println(scan.nextLine());
 			}
 			scan.close();
